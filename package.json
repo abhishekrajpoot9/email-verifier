@@ -1,0 +1,23 @@
+{
+  "name": "email-verifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "test":"jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dns": "^0.2.2",
+    "nodemailer": "^8.0.8",
+    "promises": "^0.2.5",
+    "smtp-client": "^0.4.0"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
