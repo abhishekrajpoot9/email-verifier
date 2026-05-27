@@ -2,7 +2,7 @@ const dns=require("dns").promises;
 const net=require("net");
 async function checkSMTP(email,domain){
     try{
-const mxRecords=dns.mxResolve(domain);
+const mxRecords= await dns.resolveMx(domain);
 if(!mxRecords||mxRecords.length===0){
     return{
 result:"invalid",
@@ -75,3 +75,4 @@ socket.on("error", (err) => {
     };
 }
 }
+module.exports={checkSMTP}
